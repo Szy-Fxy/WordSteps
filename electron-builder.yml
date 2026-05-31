@@ -1,0 +1,25 @@
+appId: com.wordsteps.app
+productName: WordSteps
+directories:
+  buildResources: resources
+files:
+  - dist/**/*
+  - dist-electron/**/*
+win:
+  target:
+    - nsis
+  icon: resources/icon.ico
+mac:
+  target:
+    - dmg
+  icon: resources/icon.icns
+  category: public.app-category.education
+linux:
+  target:
+    - AppImage
+    - deb
+  icon: resources/
+  category: Education
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
