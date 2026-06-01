@@ -1,5 +1,14 @@
 # WordSteps（步步记词）
 
+<p align="center">
+  <img src="https://img.shields.io/badge/version-3.0-blue" alt="version">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="license">
+  <img src="https://img.shields.io/badge/language-TypeScript-3178c6" alt="language">
+  <img src="https://img.shields.io/badge/platform-Windows-0078d6" alt="platform">
+  <img src="https://img.shields.io/badge/framework-Electron-47848f" alt="framework">
+  <img src="https://img.shields.io/badge/status-beta-orange" alt="status">
+</p>
+
 > 一款面向考研备考者的桌面端单词学习工具。浏览、回忆、拼写三种模式，内建评分调度复习，连续打卡追踪。
 
 [English](#) | 简体中文
@@ -39,13 +48,13 @@ WordSteps 是一个离线优先的 Electron 桌面应用，为系统性背单词
 
 ### 下载安装
 
-从 [Releases](https://github.com/Szy-Fxy/WordSteps/releases) 下载最新版。
+从 [Releases](https://github.com/Szy-Fxy/WordSteps/releases) 下载最新版。（暂无构建产物，请从源码运行）
 
-| 平台 | 文件 |
+| 平台 | 状态 |
 |------|------|
-| Windows | `WordSteps-Setup-x.x.x.exe` |
-
-> macOS / Linux 暂未构建，可通过源码运行。
+| Windows | ✅ 即将发布 |
+| macOS | 🔧 待适配 |
+| Linux | 🔧 待适配 |
 
 ### 从源码运行
 
