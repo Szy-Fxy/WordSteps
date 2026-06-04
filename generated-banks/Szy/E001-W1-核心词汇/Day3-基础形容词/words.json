@@ -1,0 +1,85 @@
+{
+  "label": "Day3-基础形容词",
+  "words": [
+    {
+      "s": "dynamic",
+      "p": "adj. 动态的（游戏里血量条会动态变化）",
+      "ex": {
+        "en": "The lighting system is fully dynamic.",
+        "cn": "光照系统是完全动态的。"
+      }
+    },
+    {
+      "s": "static",
+      "p": "adj. 静态的（场景里不会动的背景建筑）",
+      "ex": {
+        "en": "The static objects do not move during gameplay.",
+        "cn": "静态物体在游戏过程中不会移动。"
+      }
+    },
+    {
+      "s": "global",
+      "p": "adj. 全局的（整个游戏通用的金币数量）",
+      "ex": {
+        "en": "The global score is displayed on every screen.",
+        "cn": "全局分数在每个屏幕上都显示。"
+      }
+    },
+    {
+      "s": "local",
+      "p": "adj. 局部的（只在当前关卡生效的临时变量）",
+      "ex": {
+        "en": "The local variable only exists inside this function.",
+        "cn": "局部变量只存在于这个函数内部。"
+      }
+    },
+    {
+      "s": "virtual",
+      "p": "adj. 虚拟的（游戏世界是一个虚拟空间）",
+      "ex": {
+        "en": "The virtual camera follows the player character.",
+        "cn": "虚拟相机跟随玩家角色。"
+      }
+    },
+    {
+      "s": "physical",
+      "p": "adj. 物理的（角色跳起后会受重力影响落回地面）",
+      "ex": {
+        "en": "The engine simulates physical collisions.",
+        "cn": "引擎模拟物理碰撞。"
+      }
+    },
+    {
+      "s": "primary",
+      "p": "adj. 主要的（主武器和副武器的区别）",
+      "ex": {
+        "en": "The primary objective is to defeat the boss.",
+        "cn": "主要目标是击败Boss。"
+      }
+    },
+    {
+      "s": "secondary",
+      "p": "adj. 次要的/辅助的（副手装备的武器）",
+      "ex": {
+        "en": "The secondary effect slows the enemy.",
+        "cn": "次要效果减慢敌人的速度。"
+      }
+    },
+    {
+      "s": "efficient",
+      "p": "adj. 高效的（优化后的代码占CPU更少）",
+      "ex": {
+        "en": "An efficient algorithm runs faster.",
+        "cn": "高效的算法运行更快。"
+      }
+    },
+    {
+      "s": "complex",
+      "p": "adj. 复杂的（大型开放世界的逻辑非常复杂）",
+      "ex": {
+        "en": "The boss AI has a complex behavior tree.",
+        "cn": "Boss AI有复杂的行为树。"
+      }
+    }
+  ]
+}

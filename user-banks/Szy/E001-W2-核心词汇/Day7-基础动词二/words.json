@@ -1,0 +1,85 @@
+{
+  "label": "Day7-基础动词二",
+  "words": [
+    {
+      "s": "calculate",
+      "p": "v. 计算（根据攻防计算最终伤害）",
+      "ex": {
+        "en": "The engine calculates the damage reduction.",
+        "cn": "引擎计算伤害减免。"
+      }
+    },
+    {
+      "s": "evaluate",
+      "p": "v. 评估（系统每帧评估角色是否在安全区）",
+      "ex": {
+        "en": "The AI evaluates the best position to move.",
+        "cn": "AI评估最佳移动位置。"
+      }
+    },
+    {
+      "s": "indicate",
+      "p": "v. 指示（血条颜色变化指示危险程度）",
+      "ex": {
+        "en": "The arrow indicates the direction of the objective.",
+        "cn": "箭头指示目标的方向。"
+      }
+    },
+    {
+      "s": "maintain",
+      "p": "v. 维护（开发者定期维护服务器保证联机稳定）",
+      "ex": {
+        "en": "The engine maintains a steady frame rate.",
+        "cn": "引擎保持稳定的帧率。"
+      }
+    },
+    {
+      "s": "operate",
+      "p": "v. 操作/运行（操作系统负责调度游戏进程）",
+      "ex": {
+        "en": "The drone operates under player control.",
+        "cn": "无人机在玩家控制下运行。"
+      }
+    },
+    {
+      "s": "perform",
+      "p": "v. 执行/表现（性能测试检查游戏帧率表现）",
+      "ex": {
+        "en": "The function performs a collision check.",
+        "cn": "该函数执行碰撞检查。"
+      }
+    },
+    {
+      "s": "resolve",
+      "p": "v. 解决/解析（引擎解析依赖才能正确加载）",
+      "ex": {
+        "en": "The system resolves all references before loading.",
+        "cn": "系统在加载前解析所有引用。"
+      }
+    },
+    {
+      "s": "represent",
+      "p": "v. 代表（每个3D模型代表游戏中的一个角色）",
+      "ex": {
+        "en": "The icon represents the player on the minimap.",
+        "cn": "图标在小地图上代表玩家。"
+      }
+    },
+    {
+      "s": "require",
+      "p": "v. 需要（虚幻引擎5需要高性能显卡）",
+      "ex": {
+        "en": "This quest requires the player to find three keys.",
+        "cn": "这个任务需要玩家找到三把钥匙。"
+      }
+    },
+    {
+      "s": "establish",
+      "p": "v. 建立（联机游戏首先要建立网络连接）",
+      "ex": {
+        "en": "The game establishes a connection to the server.",
+        "cn": "游戏建立到服务器的连接。"
+      }
+    }
+  ]
+}

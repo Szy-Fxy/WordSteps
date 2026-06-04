@@ -78,6 +78,17 @@ export default function SpellArea() {
       setFbClass('correct');
       setResult(null);
       setHintLevel(0);
+      // 成就检查
+      const st = useBoundStore.getState();
+      const total = st.wordBanks?.[st.lib]?.words.length ?? 0;
+      st.checkAchievements({
+        masteredCount: Object.keys(st.masteredWords).length,
+        currentStreak: st.currentStreak,
+        streakDays: st.streakDays,
+        totalAttempts: st.totalAttempts,
+        spellCorrect: st.spellCorrect,
+        masteredTotal: total,
+      });
       skipTimerRef.current = setTimeout(advanceWord, SPELL_SKIP_DELAY);
     } else {
       setFeedback('❌ 不对，看看哪里错了');

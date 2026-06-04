@@ -1,0 +1,85 @@
+{
+  "label": "Day2-基础动词",
+  "words": [
+    {
+      "s": "define",
+      "p": "v. 定义（在代码开头给怪物设定一个类型）",
+      "ex": {
+        "en": "We define the enemy class at the top of the file.",
+        "cn": "我们在文件顶部定义了敌人类。"
+      }
+    },
+    {
+      "s": "execute",
+      "p": "v. 执行（玩家按攻击键执行一套连招逻辑）",
+      "ex": {
+        "en": "The program executes the movement code.",
+        "cn": "程序执行移动代码。"
+      }
+    },
+    {
+      "s": "generate",
+      "p": "v. 生成（地图程序自动生成随机地形）",
+      "ex": {
+        "en": "The algorithm generates a new dungeon layout.",
+        "cn": "算法生成了一个新的地下城布局。"
+      }
+    },
+    {
+      "s": "transform",
+      "p": "v. 变换/转换（把世界坐标转成屏幕坐标）",
+      "ex": {
+        "en": "The matrix transforms the 3D model into screen space.",
+        "cn": "矩阵将3D模型转换为屏幕空间。"
+      }
+    },
+    {
+      "s": "implement",
+      "p": "v. 实现（把策划文档描述的跳跃功能写出代码）",
+      "ex": {
+        "en": "The developer implements the physics system.",
+        "cn": "开发者实现了物理系统。"
+      }
+    },
+    {
+      "s": "trigger",
+      "p": "v. 触发（玩家进入某个区域触发机关）",
+      "ex": {
+        "en": "Stepping on the platform triggers a trap.",
+        "cn": "踩上平台触发陷阱。"
+      }
+    },
+    {
+      "s": "assign",
+      "p": "v. 分配/赋值（给每个敌人分配一个独立编号）",
+      "ex": {
+        "en": "The system assigns a unique ID to each object.",
+        "cn": "系统为每个对象分配唯一ID。"
+      }
+    },
+    {
+      "s": "modify",
+      "p": "v. 修改（运行时动态调整角色属性）",
+      "ex": {
+        "en": "The buff modifies the player's attack power.",
+        "cn": "增益效果修改了玩家的攻击力。"
+      }
+    },
+    {
+      "s": "detect",
+      "p": "v. 检测（碰撞系统检测两物体是否接触）",
+      "ex": {
+        "en": "The engine detects when two objects collide.",
+        "cn": "引擎检测到两个物体何时碰撞。"
+      }
+    },
+    {
+      "s": "configure",
+      "p": "v. 配置（在设置菜单里调整画质选项）",
+      "ex": {
+        "en": "The player configures the control settings.",
+        "cn": "玩家配置控制设置。"
+      }
+    }
+  ]
+}

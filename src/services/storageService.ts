@@ -11,6 +11,7 @@ interface PersistedState {
   winW: number;
   winH: number;
   bestStreak: number;
+  unlocked: Record<string, boolean>;
 }
 
 export const storageService = {
@@ -53,6 +54,7 @@ export const storageService = {
       winW: (old[LS_KEYS.winsize] as { w?: number })?.w ?? 480,
       winH: (old[LS_KEYS.winsize] as { h?: number })?.h ?? 720,
       bestStreak: 0,
+      unlocked: {},
     };
   },
 };

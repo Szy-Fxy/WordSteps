@@ -1,0 +1,85 @@
+{
+  "label": "Day10-编程逻辑词二",
+  "words": [
+    {
+      "s": "declaration",
+      "p": "n. 声明（在头文件里先声明变量类型再使用）",
+      "ex": {
+        "en": "The declaration tells the compiler what type this variable is.",
+        "cn": "声明告诉编译器该变量是什么类型。"
+      }
+    },
+    {
+      "s": "expression",
+      "p": "n. 表达式（health - damage就是一个计算表达式）",
+      "ex": {
+        "en": "The expression evaluates to true if the player is alive.",
+        "cn": "如果玩家存活，表达式求值为true。"
+      }
+    },
+    {
+      "s": "statement",
+      "p": "n. 语句（if(health<=0)是一条条件判断语句）",
+      "ex": {
+        "en": "This statement checks whether the key is pressed.",
+        "cn": "该语句检查按键是否被按下。"
+      }
+    },
+    {
+      "s": "identifier",
+      "p": "n. 标识符（每个游戏对象有一个唯一标识符）",
+      "ex": {
+        "en": "The identifier must be unique across all objects.",
+        "cn": "标识符在所有对象中必须唯一。"
+      }
+    },
+    {
+      "s": "constant",
+      "p": "n. 常量（游戏里的重力加速度是一个固定常量）",
+      "ex": {
+        "en": "Define the maximum health as a constant at the top.",
+        "cn": "将最大血量定义为顶部的常量。"
+      }
+    },
+    {
+      "s": "operation",
+      "p": "n. 操作（加减乘除都是基本的算术操作）",
+      "ex": {
+        "en": "The operation adds two vectors together.",
+        "cn": "该操作将两个向量相加。"
+      }
+    },
+    {
+      "s": "callback",
+      "p": "n. 回调（按钮被点击时执行一个回调函数）",
+      "ex": {
+        "en": "The event system calls the callback when the timer ends.",
+        "cn": "事件系统在计时器结束时调用回调。"
+      }
+    },
+    {
+      "s": "exception",
+      "p": "n. 异常（程序运行时出错会抛出异常）",
+      "ex": {
+        "en": "The engine throws an exception when the file is missing.",
+        "cn": "引擎在文件缺失时抛出异常。"
+      }
+    },
+    {
+      "s": "dependency",
+      "p": "n. 依赖（渲染模块依赖图形API才能工作）",
+      "ex": {
+        "en": "The plugin has a dependency on the physics library.",
+        "cn": "该插件依赖物理库。"
+      }
+    },
+    {
+      "s": "prototype",
+      "p": "n. 原型（先做一个快速原型来测试核心玩法）",
+      "ex": {
+        "en": "The team builds a prototype before full production.",
+        "cn": "团队在全面生产前构建原型。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "label": "Day4-常用副词介词",
+  "words": [
+    {
+      "s": "automatically",
+      "p": "adv. 自动地（游戏启动时自动加载存档）",
+      "ex": {
+        "en": "The game saves automatically every five minutes.",
+        "cn": "游戏每五分钟自动保存一次。"
+      }
+    },
+    {
+      "s": "manually",
+      "p": "adv. 手动地（玩家自己点按钮保存进度）",
+      "ex": {
+        "en": "You can manually adjust the camera angle.",
+        "cn": "你可以手动调整相机角度。"
+      }
+    },
+    {
+      "s": "directly",
+      "p": "adv. 直接地（不经过中间类直接修改属性）",
+      "ex": {
+        "en": "The input system directly reads the keyboard state.",
+        "cn": "输入系统直接读取键盘状态。"
+      }
+    },
+    {
+      "s": "simultaneously",
+      "p": "adv. 同时地（多个敌人同时发起攻击）",
+      "ex": {
+        "en": "The sound and animation play simultaneously.",
+        "cn": "声音和动画同时播放。"
+      }
+    },
+    {
+      "s": "frequently",
+      "p": "adv. 频繁地（游戏循环里每帧都要检查输入）",
+      "ex": {
+        "en": "The collision system is called frequently.",
+        "cn": "碰撞系统被频繁调用。"
+      }
+    },
+    {
+      "s": "gradually",
+      "p": "adv. 逐渐地（血量槽缓慢减少而非瞬间清零）",
+      "ex": {
+        "en": "The difficulty level increases gradually.",
+        "cn": "难度逐渐增加。"
+      }
+    },
+    {
+      "s": "normally",
+      "p": "adv. 正常地（没有异常时游戏正常运行）",
+      "ex": {
+        "en": "The game runs normally at 60 frames per second.",
+        "cn": "游戏以60帧每秒正常运行。"
+      }
+    },
+    {
+      "s": "within",
+      "p": "prep. 在……之内（检测攻击范围是否在判定区域内）",
+      "ex": {
+        "en": "The enemy must be within range to be hit.",
+        "cn": "敌人必须在范围内才能被击中。"
+      }
+    },
+    {
+      "s": "between",
+      "p": "prep. 在……之间（角色移动在两点之间插值）",
+      "ex": {
+        "en": "The game loads between levels seamlessly.",
+        "cn": "游戏在关卡之间无缝加载。"
+      }
+    },
+    {
+      "s": "beyond",
+      "p": "prep. 超出（离开地图边界就无法继续前进）",
+      "ex": {
+        "en": "The character cannot move beyond the boundary.",
+        "cn": "角色不能移动到边界之外。"
+      }
+    }
+  ]
+}

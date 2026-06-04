@@ -22,6 +22,7 @@ export function usePersistence() {
       if (saved.winW) useBoundStore.setState({ winW: saved.winW });
       if (saved.winH) useBoundStore.setState({ winH: saved.winH });
       if (saved.bestStreak) useBoundStore.setState({ bestStreak: saved.bestStreak });
+      if (saved.unlocked) useBoundStore.setState({ unlocked: saved.unlocked });
     }
   }, []);
 
@@ -39,6 +40,7 @@ export function usePersistence() {
         winW: state.winW,
         winH: state.winH,
         bestStreak: state.bestStreak,
+        unlocked: state.unlocked,
       });
     });
     return unsub;

@@ -1,0 +1,85 @@
+{
+  "label": "Day1-基础名词",
+  "words": [
+    {
+      "s": "variable",
+      "p": "n. 变量（像游戏里存储玩家血量的容器）",
+      "ex": {
+        "en": "The variable stores the player's health.",
+        "cn": "变量存储了玩家的血量。"
+      }
+    },
+    {
+      "s": "function",
+      "p": "n. 函数（按一个键就触发一整段跳跃逻辑）",
+      "ex": {
+        "en": "This function handles the jump action.",
+        "cn": "这个函数处理跳跃动作。"
+      }
+    },
+    {
+      "s": "value",
+      "p": "n. 值（角色当前的攻击力数字）",
+      "ex": {
+        "en": "The value of the score increases by 10.",
+        "cn": "分数的值增加了10。"
+      }
+    },
+    {
+      "s": "data",
+      "p": "n. 数据（存档文件里记录的所有游戏信息）",
+      "ex": {
+        "en": "The system saves the player data.",
+        "cn": "系统保存了玩家数据。"
+      }
+    },
+    {
+      "s": "element",
+      "p": "n. 元素（UI界面上一个按钮是一个界面元素）",
+      "ex": {
+        "en": "Each UI element has a position.",
+        "cn": "每个UI元素都有一个位置。"
+      }
+    },
+    {
+      "s": "structure",
+      "p": "n. 结构（游戏里一棵技能树就是个树形结构）",
+      "ex": {
+        "en": "The team designed a new data structure.",
+        "cn": "团队设计了一个新的数据结构。"
+      }
+    },
+    {
+      "s": "resource",
+      "p": "n. 资源（角色的体力值是一种有限资源）",
+      "ex": {
+        "en": "The game manages memory resources carefully.",
+        "cn": "游戏仔细管理内存资源。"
+      }
+    },
+    {
+      "s": "action",
+      "p": "n. 动作（玩家按空格触发跳跃动作）",
+      "ex": {
+        "en": "Every action in the game triggers an animation.",
+        "cn": "游戏中的每个动作都触发一个动画。"
+      }
+    },
+    {
+      "s": "event",
+      "p": "n. 事件（玩家按下按键这个事件驱动后续逻辑）",
+      "ex": {
+        "en": "The event fires when the enemy dies.",
+        "cn": "当敌人死亡时触发该事件。"
+      }
+    },
+    {
+      "s": "process",
+      "p": "n. 进程/过程（游戏运行时后台有一个主循环进程）",
+      "ex": {
+        "en": "The rendering process runs every frame.",
+        "cn": "渲染进程每帧运行。"
+      }
+    }
+  ]
+}

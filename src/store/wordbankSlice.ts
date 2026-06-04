@@ -71,9 +71,49 @@ export const createWordbankSlice: StateCreator<BoundStore, [], [], WordbankSlice
   },
 
   switchMyBank: (key) => {
-    const { wordBanks, favorites } = get();
+    const { wordBanks, favorites, todayWords } = get();
     if (!wordBanks) return;
 
+    // 今日所学：跨天检测
+    if (key === 'my-today') {
+      const todayDate = new Date().toISOString().slice(0, 10);
+      const { todayWordsDate } = get();
+      // 日期变化时清空
+      if (todayWordsDate && todayWordsDate !== todayDate) {
+        get().clearTodayWords();
+      }
+
+      const myWords: WordEntry[] = [];
+      const twSet = new Set(get().todayWords);
+      if (twSet.size === 0) {
+        get().showToast('📅 今天还没有学过的词');
+        return;
+      }
+      const seen = new Set<string>();
+      for (const k of Object.keys(wordBanks)) {
+        for (const w of wordBanks[k]!.words) {
+          if (twSet.has(w.s) && !seen.has(w.s)) {
+            myWords.push(w);
+            seen.add(w.s);
+          }
+        }
+      }
+      if (myWords.length === 0) {
+        get().showToast('📅 今天还没有学过的词');
+        return;
+      }
+      set({
+        lib: key,
+        allWords: myWords,
+        words: myWords,
+        isSearching: false,
+      });
+      get().resetSession(true);
+      get().showToast(`已切换到今日所学 (${myWords.length}词)`);
+      return;
+    }
+
+    // 全部收藏
     const myWords: WordEntry[] = [];
     for (const k of Object.keys(wordBanks)) {
       myWords.push(...wordBanks[k]!.words.filter(w => favorites.has(w.s)));

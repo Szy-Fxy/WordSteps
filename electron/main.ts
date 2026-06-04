@@ -35,13 +35,13 @@ function clampSize(w: number, h: number): [number, number] {
 
 function createWindow() {
   const [rw, rh] = RATIOS[currentRatioIdx]!;
-  const baseScale = 240;
+  const baseScale = 170;
 
   mainWindow = new BrowserWindow({
     width: rw * baseScale,
     height: rh * baseScale,
-    minWidth: Math.min(rw, rh) * 120,
-    minHeight: Math.min(rw, rh) * 120,
+    minWidth: Math.min(rw, rh) * 90,
+    minHeight: Math.min(rw, rh) * 90,
     title: 'WordSteps 步步记词',
     webPreferences: {
       preload: join(__dirname, 'preload.js'),
@@ -131,10 +131,15 @@ function scanUserBanks(dir: string, prefix = '', maxDepth = 3): Record<string, W
       // 递归扫描子文件夹
       const children = scanUserBanks(full, key, maxDepth - 1);
       if (Object.keys(children).length > 0) {
-        // 父级：合并所有子级单词 + 自身单词
+        // 父级：合并子父节点的单词，跳过叶子（叶子词已包含在父节点中）
         const allWords = words;
-        for (const ck of Object.keys(children)) {
-          allWords.push(...(children[ck]?.words ?? []));
+        const childKeys = Object.keys(children);
+        for (const ck of childKeys) {
+          // 跳过孙级：如果该 key 以另一个 child key 为前缀，则已是中间父节点的子集
+          const isGrandchild = childKeys.some(other => other !== ck && ck.startsWith(other + '-'));
+          if (!isGrandchild) {
+            allWords.push(...(children[ck]?.words ?? []));
+          }
         }
         banks[key] = { label, key, words: allWords };
         Object.assign(banks, children);
@@ -218,6 +223,25 @@ ipcMain.handle('bank:list-user', () => {
 ipcMain.handle('bank:open-folder', () => {
   const dir = getUserBanksDir();
   shell.openPath(dir);
+});
+
+ipcMain.handle('bank:create-user', async (_e, { name }: { name: string }) => {
+  if (!name || !name.trim()) {
+    return { success: false, error: '词库名不能为空' };
+  }
+  const safeName = name.trim();
+  const dir = join(getUserBanksDir(), safeName);
+  if (existsSync(dir)) {
+    return { success: false, error: '这个词库名已存在，请换一个' };
+  }
+  try {
+    mkdirSync(dir, { recursive: true });
+    const template = { label: safeName, words: [] };
+    writeFileSync(join(dir, 'words.json'), JSON.stringify(template, null, 2), 'utf-8');
+    return { success: true, key: safeName };
+  } catch (e) {
+    return { success: false, error: '创建失败，名称含有非法字符或权限不足' };
+  }
 });
 
 ipcMain.handle('storage:save', (_e, data: Record<string, unknown>) => {

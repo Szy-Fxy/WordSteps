@@ -9,10 +9,11 @@ export function useDisplay(): DisplayData | null {
   const words = useBoundStore(s => s.words);
   const index = useBoundStore(s => s.index);
   const allWords = useBoundStore(s => s.allWords);
+  const consecutiveReviews = useBoundStore(s => s.consecutiveReviews);
 
   return useMemo(
-    () => computeDisplay({ reviewQueue, words, index, allWords }),
-    [reviewQueue, words, index, allWords]
+    () => computeDisplay({ reviewQueue, words, index, allWords, consecutiveReviews }),
+    [reviewQueue, words, index, allWords, consecutiveReviews]
   );
 }
 

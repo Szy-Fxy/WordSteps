@@ -1,0 +1,85 @@
+{
+  "label": "Day8-基础形容词二",
+  "words": [
+    {
+      "s": "abstract",
+      "p": "adj. 抽象的（游戏状态机是一个抽象概念）",
+      "ex": {
+        "en": "An abstract class cannot be instantiated directly.",
+        "cn": "抽象类不能直接实例化。"
+      }
+    },
+    {
+      "s": "concrete",
+      "p": "adj. 具体的（具体角色模型而不是通用模板）",
+      "ex": {
+        "en": "The concrete enemy type has unique behavior.",
+        "cn": "具体的敌人类型有独特的行为。"
+      }
+    },
+    {
+      "s": "fundamental",
+      "p": "adj. 基本的（碰撞检测是游戏物理的基础）",
+      "ex": {
+        "en": "Understanding vectors is fundamental to 3D graphics.",
+        "cn": "理解向量是3D图形的基础。"
+      }
+    },
+    {
+      "s": "optional",
+      "p": "adj. 可选的（支线任务不强制完成）",
+      "ex": {
+        "en": "The high-resolution texture pack is optional.",
+        "cn": "高分辨率纹理包是可选的。"
+      }
+    },
+    {
+      "s": "temporary",
+      "p": "adj. 临时的（捡到的临时增益过一会消失）",
+      "ex": {
+        "en": "The speed boost is temporary and lasts ten seconds.",
+        "cn": "速度提升是临时的，持续10秒。"
+      }
+    },
+    {
+      "s": "permanent",
+      "p": "adj. 永久的（解锁成就带来的称号是永久的）",
+      "ex": {
+        "en": "The upgrade gives a permanent health increase.",
+        "cn": "升级提供了永久的血量提升。"
+      }
+    },
+    {
+      "s": "original",
+      "p": "adj. 原始的/最初的（原始设计文档定义了机制）",
+      "ex": {
+        "en": "The original game had only four levels.",
+        "cn": "最初的游戏只有四个关卡。"
+      }
+    },
+    {
+      "s": "specific",
+      "p": "adj. 具体的/特定的（特定按键触发特定技能）",
+      "ex": {
+        "en": "This potion restores a specific type of resource.",
+        "cn": "这瓶药水恢复特定类型的资源。"
+      }
+    },
+    {
+      "s": "general",
+      "p": "adj. 一般的/通用的（通用算法适用于多种场景）",
+      "ex": {
+        "en": "The general rule applies to all game objects.",
+        "cn": "通用规则适用于所有游戏对象。"
+      }
+    },
+    {
+      "s": "positive",
+      "p": "adj. 积极的/正的（增益效果给玩家正面影响）",
+      "ex": {
+        "en": "The positive feedback loop makes the game more fun.",
+        "cn": "正反馈循环让游戏更有趣。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "label": "Day9-副词介词二",
+  "words": [
+    {
+      "s": "accordingly",
+      "p": "adv. 相应地（伤害变化后血量条相应更新）",
+      "ex": {
+        "en": "The AI adjusts its behavior accordingly.",
+        "cn": "AI相应地调整行为。"
+      }
+    },
+    {
+      "s": "consequently",
+      "p": "adv. 因此（网络延迟高因此操作有明显卡顿）",
+      "ex": {
+        "en": "The frame rate dropped and consequently the animation stuttered.",
+        "cn": "帧率下降，因此动画卡顿。"
+      }
+    },
+    {
+      "s": "eventually",
+      "p": "adv. 最终（经过多次尝试最终击败Boss）",
+      "ex": {
+        "en": "The player eventually unlocks all achievements.",
+        "cn": "玩家最终解锁所有成就。"
+      }
+    },
+    {
+      "s": "initially",
+      "p": "adv. 最初（游戏最初加载时显示引擎Logo）",
+      "ex": {
+        "en": "Initially the character has no special abilities.",
+        "cn": "最初角色没有特殊能力。"
+      }
+    },
+    {
+      "s": "merely",
+      "p": "adv. 仅仅（这个错误仅仅是个警告不影响运行）",
+      "ex": {
+        "en": "This variable is merely a counter for the loop.",
+        "cn": "这个变量仅仅是循环的计数器。"
+      }
+    },
+    {
+      "s": "precisely",
+      "p": "adv. 精确地（物理引擎需要精确计算碰撞时间）",
+      "ex": {
+        "en": "The raycast hits the target precisely.",
+        "cn": "射线投射精确命中目标。"
+      }
+    },
+    {
+      "s": "relatively",
+      "p": "adv. 相对地（相比上一代引擎新版本相对高效）",
+      "ex": {
+        "en": "The setup is relatively simple for an experienced developer.",
+        "cn": "对有经验的开发者来说配置相对简单。"
+      }
+    },
+    {
+      "s": "subsequently",
+      "p": "adv. 随后（先加载关卡资源随后启动游戏逻辑）",
+      "ex": {
+        "en": "The player defeats the boss and subsequently enters the next area.",
+        "cn": "玩家击败Boss后进入下一个区域。"
+      }
+    },
+    {
+      "s": "approximately",
+      "p": "adv. 大约（加载速度大约需要10秒）",
+      "ex": {
+        "en": "The download size is approximately 50 gigabytes.",
+        "cn": "下载大小大约是50GB。"
+      }
+    },
+    {
+      "s": "virtually",
+      "p": "adv. 几乎/虚拟地（虚拟现实让玩家身临其境）",
+      "ex": {
+        "en": "The loading time is virtually zero on modern hardware.",
+        "cn": "在现代硬件上加载时间几乎为零。"
+      }
+    }
+  ]
+}

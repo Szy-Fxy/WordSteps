@@ -1,4 +1,5 @@
 import { useBoundStore } from '../store/boundStore';
+import { ACHIEVEMENTS } from '../store/achievementSlice';
 
 export default function StatsBar() {
   const wordBanks = useBoundStore(s => s.wordBanks);
@@ -11,6 +12,8 @@ export default function StatsBar() {
   const spellTotal = useBoundStore(s => s.spellTotal);
   const streakDays = useBoundStore(s => s.streakDays);
   const reviewQueue = useBoundStore(s => s.reviewQueue);
+  const unlocked = useBoundStore(s => s.unlocked);
+  const toggleAchievementPanel = useBoundStore(s => s.toggleAchievementPanel);
 
   if (!wordBanks) return null;
 
@@ -20,6 +23,8 @@ export default function StatsBar() {
   const pct = total ? Math.min(100, Math.round((mastered / total) * 100)) : 0;
   const accuracy = totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) + '%' : '--';
   const spellAccuracy = spellTotal > 0 ? Math.round((spellCorrect / spellTotal) * 100) + '%' : '--';
+  const achEarned = Object.keys(unlocked).length;
+  const achTotal = ACHIEVEMENTS.length;
 
   return (
     <div className="stats-bar">
@@ -39,6 +44,11 @@ export default function StatsBar() {
         <span className="stat-item stat-sm">📝 待复习 {reviewQueue.length}</span>
         <span className="stat-item stat-sm">🎯 {accuracy}</span>
         <span className="stat-item stat-sm">✏️ {spellAccuracy}</span>
+      </div>
+      <div className="stats-row stats-row-achievement">
+        <button className="stats-achievement-btn" onClick={toggleAchievementPanel}>
+          🏆 {achEarned}/{achTotal}
+        </button>
       </div>
     </div>
   );

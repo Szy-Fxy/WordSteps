@@ -14,6 +14,12 @@ export const LS_KEYS = {
 // 复习队列窗口大小 - 超过此值的复习词视为过期
 export const REVIEW_WINDOW = 10;
 
+// 同一词最多复习次数，超过则放弃（不继续折磨用户）
+export const MAX_REVIEW_ATTEMPTS = 3;
+
+// 连续复习词上限，超过则强制显示新词
+export const MAX_CONSECUTIVE_REVIEWS = 2;
+
 // 拼写模式跳过停留时间（ms）
 export const SPELL_SKIP_DELAY = 2000;
 

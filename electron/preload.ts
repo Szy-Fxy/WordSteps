@@ -11,7 +11,8 @@ const IPC_CHANNELS = {
   'window:get-ratio': {} as { req: void; res: number },
   'bank:list-user':   {} as { req: void; res: Record<string, import('../src/types').WordBank> },
   'bank:open-folder': {} as { req: void; res: void },
-  'storage:save':     {} as { req: Record<string, unknown>; res: void },
+  'storage:save':      {} as { req: Record<string, unknown>; res: void },
+  'bank:create-user':  {} as { req: { name: string }; res: { success: boolean; key?: string; error?: string } },
 } as const;
 
 contextBridge.exposeInMainWorld('electronAPI', {
@@ -27,4 +28,5 @@ contextBridge.exposeInMainWorld('electronAPI', {
   listUserBanks: () => ipcRenderer.invoke('bank:list-user', undefined),
   openUserBanksFolder: () => ipcRenderer.invoke('bank:open-folder', undefined),
   saveStorage: (data: Record<string, unknown>) => ipcRenderer.invoke('storage:save', data),
+  createUserBank: (name: string) => ipcRenderer.invoke('bank:create-user', { name }),
 });

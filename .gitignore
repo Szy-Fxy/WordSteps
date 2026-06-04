@@ -1,38 +1,28 @@
-# Dependencies
+# ── Dependencies ──
 node_modules/
+package-lock.json
 
-# Build output
+# ── Build output ──
 dist/
 dist-electron/
-
-# Environment
-.env
-.env.local
-.env.*.local
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# Electron builder
 release/
 *.exe
 *.dmg
 *.deb
 *.rpm
 
-# Logs
-*.log
-npm-debug.log*
-
-# Aegis (separate governance framework, not project code)
+# ── Aegis 治理系统（独立仓库） ──
 Aegis/
+Aegis_Specs/
 
-# Dev utilities & test scripts
+# ── 一次性/本地脚本 ──
+_check.bat
+_extract.bat
+_run.bat
+scripts/
+esbuild_temp.exe
+
+# ── 开发调试临时文件 ──
 AUDIT_REPORT.md
 check-*.mjs
 copy-wordbank.mjs
@@ -42,5 +32,19 @@ test.html
 test-compiled*.mjs
 src/testData.ts
 
-# One-time utility scripts
-scripts/
+# ── 环境配置 ──
+.env
+.env.local
+.env.*.local
+
+# ── OS 残留 ──
+.DS_Store
+Thumbs.db
+
+# ── IDE ──
+.vscode/
+.idea/
+
+# ── 日志 ──
+*.log
+npm-debug.log*

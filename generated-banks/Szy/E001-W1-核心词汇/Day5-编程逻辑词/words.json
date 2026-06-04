@@ -1,0 +1,85 @@
+{
+  "label": "Day5-编程逻辑词",
+  "words": [
+    {
+      "s": "condition",
+      "p": "n. 条件（如果血量小于0则触发死亡画面）",
+      "ex": {
+        "en": "The condition checks if the player has enough mana.",
+        "cn": "条件检查玩家是否有足够的法力值。"
+      }
+    },
+    {
+      "s": "loop",
+      "p": "n. 循环（游戏的主循环每秒执行60次）",
+      "ex": {
+        "en": "The game loop updates all objects each frame.",
+        "cn": "游戏循环每帧更新所有对象。"
+      }
+    },
+    {
+      "s": "logic",
+      "p": "n. 逻辑（游戏里判定输赢的规则系统）",
+      "ex": {
+        "en": "The game logic determines whether the player wins.",
+        "cn": "游戏逻辑决定玩家是否获胜。"
+      }
+    },
+    {
+      "s": "parameter",
+      "p": "n. 参数（调用跳跃函数时传递跳跃高度值）",
+      "ex": {
+        "en": "This function takes a speed parameter.",
+        "cn": "这个函数接收一个速度参数。"
+      }
+    },
+    {
+      "s": "interface",
+      "p": "n. 接口（玩家和游戏交互的UI界面）",
+      "ex": {
+        "en": "The user interface shows the health bar.",
+        "cn": "用户界面显示血量条。"
+      }
+    },
+    {
+      "s": "instance",
+      "p": "n. 实例（每个敌人对战中都是一个具体实例）",
+      "ex": {
+        "en": "Each instance of the enemy has its own health.",
+        "cn": "每个敌人实例有自己的血量。"
+      }
+    },
+    {
+      "s": "attribute",
+      "p": "n. 属性（角色的血量、蓝量、攻击力都是属性）",
+      "ex": {
+        "en": "The class has an attribute for movement speed.",
+        "cn": "该类有一个移动速度属性。"
+      }
+    },
+    {
+      "s": "method",
+      "p": "n. 方法（角色类里的跳跃函数就是一个方法）",
+      "ex": {
+        "en": "The player class has a method called Jump.",
+        "cn": "玩家类有一个叫Jump的方法。"
+      }
+    },
+    {
+      "s": "module",
+      "p": "n. 模块（把游戏UI做成独立的模块方便复用）",
+      "ex": {
+        "en": "Each module in the engine handles a specific task.",
+        "cn": "引擎中的每个模块处理一个特定任务。"
+      }
+    },
+    {
+      "s": "algorithm",
+      "p": "n. 算法（找敌人的路径需要寻路算法）",
+      "ex": {
+        "en": "The pathfinding algorithm finds the shortest route.",
+        "cn": "寻路算法找到最短路径。"
+      }
+    }
+  ]
+}

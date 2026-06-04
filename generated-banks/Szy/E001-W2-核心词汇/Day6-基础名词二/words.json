@@ -1,0 +1,85 @@
+{
+  "label": "Day6-基础名词二",
+  "words": [
+    {
+      "s": "component",
+      "p": "n. 组件（游戏的渲染系统是一个独立组件）",
+      "ex": {
+        "en": "The physics component handles gravity and collisions.",
+        "cn": "物理组件处理重力和碰撞。"
+      }
+    },
+    {
+      "s": "container",
+      "p": "n. 容器（角色的背包是一个物品容器）",
+      "ex": {
+        "en": "The inventory container holds up to 20 items.",
+        "cn": "物品容器最多容纳20件物品。"
+      }
+    },
+    {
+      "s": "pattern",
+      "p": "n. 模式/模板（Boss的攻击有固定模式）",
+      "ex": {
+        "en": "The enemy follows a repeating movement pattern.",
+        "cn": "敌人遵循重复的移动模式。"
+      }
+    },
+    {
+      "s": "sequence",
+      "p": "n. 序列（玩家输入的方向键序列触发组合技）",
+      "ex": {
+        "en": "The animation sequence plays when the player attacks.",
+        "cn": "玩家攻击时播放动画序列。"
+      }
+    },
+    {
+      "s": "source",
+      "p": "n. 源/来源（音频文件是声音的源头）",
+      "ex": {
+        "en": "The light source casts shadows in real time.",
+        "cn": "光源实时投射阴影。"
+      }
+    },
+    {
+      "s": "target",
+      "p": "n. 目标（按下锁定键选取一个攻击目标）",
+      "ex": {
+        "en": "The missile tracks its target automatically.",
+        "cn": "导弹自动追踪目标。"
+      }
+    },
+    {
+      "s": "version",
+      "p": "n. 版本（游戏发布时会标注版本号v1.0）",
+      "ex": {
+        "en": "The latest version fixes several bugs.",
+        "cn": "最新版本修复了几个Bug。"
+      }
+    },
+    {
+      "s": "status",
+      "p": "n. 状态（角色面板显示当前各种状态数值）",
+      "ex": {
+        "en": "The status bar shows health and mana.",
+        "cn": "状态栏显示血量和法力值。"
+      }
+    },
+    {
+      "s": "range",
+      "p": "n. 范围（弓箭手的攻击范围比战士远）",
+      "ex": {
+        "en": "The effect applies to all enemies in range.",
+        "cn": "效果作用于范围内的所有敌人。"
+      }
+    },
+    {
+      "s": "mode",
+      "p": "n. 模式（游戏有单人模式和多人模式）",
+      "ex": {
+        "en": "Switch to debug mode to see the collision boxes.",
+        "cn": "切换到调试模式查看碰撞框。"
+      }
+    }
+  ]
+}

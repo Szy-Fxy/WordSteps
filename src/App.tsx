@@ -5,6 +5,7 @@ import { useAnimation } from './hooks/useAnimation';
 import { useKeyboard } from './hooks/useKeyboard';
 import { usePersistence } from './hooks/usePersistence';
 import { useAudio } from './hooks/useAudio';
+
 import { computeDisplay } from './store/sessionSlice';
 import ShortcutHints from './components/ShortcutHints';
 import TitleBar from './components/TitleBar';
@@ -20,6 +21,7 @@ import FloatBall from './components/FloatBall';
 import SettingsPanel from './components/SettingsPanel';
 import ModalOverlay from './components/ModalOverlay';
 import Toast from './components/Toast';
+import AchievementPanel from './components/AchievementPanel';
 import type { CharState } from './types';
 
 function buildFeedback(
@@ -99,6 +101,17 @@ export default function App() {
         const fb = buildFeedback(cs, s.currentStreak, s.streakDays, s.todayCount);
         if (fb) setFeedback(fb.msg, fb.type);
         s.setCharState(cs);
+
+        // 成就检查
+        const total = s.wordBanks?.[s.lib]?.words.length ?? 0;
+        s.checkAchievements({
+          masteredCount: Object.keys(s.masteredWords).length,
+          currentStreak: s.currentStreak,
+          streakDays: s.streakDays,
+          totalAttempts: s.totalAttempts,
+          spellCorrect: s.spellCorrect,
+          masteredTotal: total,
+        });
       });
     } else if (action === 'dontknow') {
       animateThen('left', () => {
@@ -127,27 +140,30 @@ export default function App() {
   if (error) return <div className="error">加载失败: {error}</div>;
 
   return (
-    <div className={`app ${darkTheme ? 'dark' : ''} ${hidden ? 'hidden' : ''} mode-${mode}`}>
-      <TitleBar />
-      <div className="top-bar">
-        <BankSelector />
-        <SearchBar />
-      </div>
-      <ModeTabs />
-      <main className="main-content" onDoubleClick={handleDoubleClick}>
-        <div className={`word-card-wrap ${isAnimating ? 'swipe-out' : 'swipe-in'}`}>
-          <WordCard />
-          <SpellArea />
-          <ShortcutHints />
+    <div className="app-root">
+      <div className={`app ${darkTheme ? 'dark' : ''} ${hidden ? 'hidden' : ''} mode-${mode}`}>
+        <TitleBar />
+        <div className="top-bar">
+          <BankSelector />
+          <SearchBar />
         </div>
-      </main>
-      <FeedbackBar />
-      <NavBar onAction={handleAction} />
-      <StatsBar />
+        <ModeTabs />
+        <main className="main-content" onDoubleClick={handleDoubleClick}>
+          <div className={`word-card-wrap ${isAnimating ? 'swipe-out' : 'swipe-in'}`}>
+                <WordCard />
+                <SpellArea />
+          </div>
+          <ShortcutHints />
+        </main>
+        <FeedbackBar />
+        <NavBar onAction={handleAction} />
+        <StatsBar />
+      </div>
       <FloatBall />
       <SettingsPanel />
       <ModalOverlay />
       <Toast />
+      <AchievementPanel />
     </div>
   );
 }

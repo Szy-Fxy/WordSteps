@@ -21,6 +21,7 @@ export interface UiSlice {
   isAnimating: boolean;
   animDir: 'left' | 'right' | 'down' | null;
   paraphraseVisible: boolean;
+  showAchievementPanel: boolean;
 
   toggleTheme: () => void;
   toggleHidden: () => void;
@@ -31,6 +32,7 @@ export interface UiSlice {
   toggleAutoAudio: () => void;
   toggleBankNumber: () => void;
   toggleParaphrase: () => void;
+  toggleAchievementPanel: () => void;
   setCharState: (cs: CharState) => void;
   resetCharToIdle: () => void;
   setFeedback: (msg: string, ftype: string) => void;
@@ -59,6 +61,7 @@ export const createUiSlice: StateCreator<BoundStore, [], [], UiSlice> = (set) =>
   isAnimating: false,
   animDir: null,
   paraphraseVisible: true,
+  showAchievementPanel: false,
 
   toggleTheme: () => set(s => ({ darkTheme: !s.darkTheme })),
   toggleHidden: () => set(s => ({ hidden: !s.hidden })),
@@ -73,6 +76,7 @@ export const createUiSlice: StateCreator<BoundStore, [], [], UiSlice> = (set) =>
   }),
   toggleBankNumber: () => set(s => ({ showBankNumber: !s.showBankNumber })),
   toggleParaphrase: () => set(s => ({ paraphraseVisible: !s.paraphraseVisible })),
+  toggleAchievementPanel: () => set(s => ({ showAchievementPanel: !s.showAchievementPanel })),
   setCharState: (cs) => set({ charState: cs }),
   resetCharToIdle: () => set({ charState: 'idle' }),
   setFeedback: (msg, ftype) => set({ feedbackMsg: msg, feedbackType: ftype }),

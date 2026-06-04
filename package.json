@@ -5,13 +5,15 @@
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
-    "dev:electron": "vite & npx electron .",
+    "dev:electron": "vite",
+    "install-banks": "if not exist \"%APPDATA%\\wordsteps\\user-banks\\Szy\" mkdir \"%APPDATA%\\wordsteps\\user-banks\\Szy\" && xcopy /E /I /Y \"user-banks\\Szy\\*\" \"%APPDATA%\\wordsteps\\user-banks\\Szy\\\"",
     "build": "tsc && vite build && electron-builder",
     "build:unpack": "tsc && vite build && electron-builder --dir",
     "preview": "vite preview"
   },
   "dependencies": {
     "electron-store": "^11.0.2",
+    "esbuild-wasm": "^0.25.12",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "zustand": "^5.0.14"
